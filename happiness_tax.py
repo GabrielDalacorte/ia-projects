@@ -18,5 +18,7 @@ def is_happiness_tax(csv_money, csv_happiness) -> DataFrame:
 
     return final_merge.head(10)  # return 10 values
 
+
 def linear_regression(pib):
+    # in progress
     pass
