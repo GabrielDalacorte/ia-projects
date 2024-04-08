@@ -18,7 +18,7 @@ Welcome to the AI files repository for my postgraduate studies. Here, you will f
     The happiness_tax.py file is a more complex script that performs the following operations:
       * Joins two CSV files into a single dataframe.
       * Calculates a learning metric to determine whether a person is happy or not in the country, based on the GDP.
-    * 🚀 Usage: To run the happiness_tax.py script, follow the steps below:
+      * 🚀 Usage: To run the happiness_tax.py script, follow the steps below:
          ```
          python happiness_tax.py
          ```
@@ -26,16 +26,16 @@ Welcome to the AI files repository for my postgraduate studies. Here, you will f
 
 3. `fish_obesity.py`
    [PART 1] -> Using training data
-       * 📝 Description:
-       The happiness_tax.py file is a more complex script that performs the following operations:
-         * Joins two CSV files into a single dataframe.
-         * Calculate matrices and generate graph with machine learning of obese fish by height.
-         * 🚀 Usage: To run the fish_obesity.py script, follow the steps below:
-              ```
-              python happiness_tax.py
-              ```
-       The script will ask for the paths of the CSV files you want to join. After joining the files, the script will separate the test data into 80%/20% and then calculate and generate a graph of obese fish based on weight and height.    * Image return:
-       ![img.png](img.png)
+   * 📝 Description:
+   The happiness_tax.py file is a more complex script that performs the following operations:
+      * Joins two CSV files into a single dataframe.
+      * Calculate matrices and generate graph with machine learning of obese fish by height.
+      * 🚀 Usage: To run the fish_obesity.py script, follow the steps below:
+         ```
+         python happiness_tax.py
+         ```
+      The script will ask for the paths of the CSV files you want to join. After joining the files, the script will separate the test data into 80%/20% and then calculate and generate a graph of obese fish based on weight and height.    * Image return:
+      ![img.png](img.png)
 
     [PART 2] -> Using test data
 
