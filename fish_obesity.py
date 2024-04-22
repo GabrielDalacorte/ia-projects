@@ -3,13 +3,13 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC
 from matplotlib import pyplot as plt
+from sklearn.metrics import ConfusionMatrixDisplay, confusion_matrix
 
 
 class FishObesity:
     def __init__(self):
         self.fish_obesity_df = pd.read_csv('data_frames/fish obesity.csv')
         self.prepare()
-
 
     def prepare(self):
         """
@@ -52,3 +52,16 @@ class FishObesity:
         is_obesity_new_fish = [[200, 163]]
         obesity_new_fish = classifier.predict(is_obesity_new_fish)
         print(f"Obesity: {True if obesity_new_fish[0] == 1 else False}")
+
+        y_pred = classifier.predict(X_test)
+        cm = confusion_matrix(y_test, y_pred)
+
+        disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=classifier.classes_)
+        disp.plot(cmap=plt.cm.Blues)
+        plt.title('Matriz de Confusão')
+        plt.xlabel('Predicted Label')
+        plt.ylabel('True Label')
+        plt.show()
+
+        return classifier
+
